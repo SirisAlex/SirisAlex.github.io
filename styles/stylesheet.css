@@ -1,0 +1,156 @@
+#mainBody{
+    display: grid;
+    background-image: url("../media/Arcadebackground.png");
+    grid-template-areas:
+    "navbar"
+    "heading"
+    "about"
+    "projects"
+    "contactInfo";
+    font-family: "Piazzolla", serif;
+}
+#navbar{
+    grid-area: navbar;
+    background-image: linear-gradient(yellow, orange, red);
+    height: 5rem;
+    border: 5px solid silver;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 98%;
+    position: fixed;
+}
+#navbar a:link{
+    color: black;
+}
+#navbar a:active{
+    color: crimson;
+} 
+#navbar a:visited{
+    color: purple;
+}
+#navbar a:hover{
+    font-size: 3rem;
+}
+
+
+main{
+    grid-area: heading;
+    
+}
+#headerLines{
+    width: 98%;
+}
+#mainHeader{
+    font-size: 4rem;
+    margin-top: 7rem;
+    text-align: center;
+    color: whitesmoke;
+}
+#tagline{
+    font-size: 3rem;
+    font-style: italic;
+    text-align: center;
+    border-bottom: 2px solid whitesmoke;
+    color: whitesmoke;
+    padding-bottom: 2px;
+}
+#aboutHeader{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2rem;
+}
+#aboutBanner{
+    grid-area: about;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightslategray;
+    border: 5px solid black;
+}
+#aboutBanner img{
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 1000px){
+    #aboutBanner img{
+        margin-right: auto;
+        margin-left: 15rem;
+    }
+}
+@media (max-width: 1000px)
+{
+    #aboutBanner{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        background-color: lightslategray;
+        border: 5px solid black;
+    }
+    .project{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: lightslategray;
+        border: 5px solid black;
+        padding: 1rem;
+    }
+    .project img{
+        border: 5px solid black;
+    }
+    .project p{
+        display: flex;
+        flex-wrap: wrap;
+        width: 40rem;
+        padding: 1rem;
+        border: 5px solid black;
+        background-color: teal;
+    }
+}
+#aboutBanner p{
+    font-size: 20px;
+    padding: 10px;
+}
+#contactInfo{
+    grid-area: contactInfo;
+    text-align: center;
+    background-color:lightslategrey;
+    font-size: 20px;
+    border: 5px solid black;
+    padding: 20px;
+    margin-top: 1rem;
+}
+#contactInfo h2{
+    text-decoration: underline;
+}
+#contactInfo a:hover{
+    font-size: 23px;
+}
+#contactInfo a:link{
+    color: darkorchid
+}
+#projectArea{
+    color: whitesmoke;
+}
+.project{
+    display: flex;
+    justify-content: space-around;
+    background-color: lightslategray;
+    border: 5px solid black;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+.project img{
+    border: 5px solid black;
+}
+.project p{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40rem;
+    padding: 1rem;
+    border: 5px solid black;
+    background-color: teal;
+}
