@@ -1,6 +1,6 @@
 #mainBody{
     display: grid;
-    background-image: url("media/Arcadebackground.png");
+    background-image: url("../media/Arcadebackground.png");
     grid-template-areas:
     "navbar"
     "heading"
